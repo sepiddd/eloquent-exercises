@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sepiddd</title>
+  </head>
+  <body>
+    <p>eloquent javascript</p>
+  </body>
+
+  <script type="text/javascript">
+    function reverseArray(arr) {
+      return arr.reverse();
+    }
+
+    console.log(reverseArray([3, 5, 1, 0, 4, 7]));
+
+    function reverseArrayInPlace(arr) {
+      let newArr = [];
+      for (el of arr) newArr.unshift(el);
+      return newArr;
+    }
+
+    console.log(reverseArrayInPlace([3, 5, 1, 0, 4, 7]));
+  </script>
+</html>
