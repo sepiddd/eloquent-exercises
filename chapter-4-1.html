@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sepiddd</title>
+  </head>
+  <body>
+    <p>eloquent javascript</p>
+  </body>
+
+  <script type="text/javascript">
+    function range(start, end, step) {
+      let arr = [];
+      for (let i = start; i <= end; step ? (i += step) : i++) {
+        arr.push(i);
+      }
+      return arr;
+    }
+    function sum(item) {
+      let count = 0;
+      for (el of item) count += el;
+      return count;
+    }
+    console.log(sum(range(1, 10, 3)));
+
+    function reverseArray() {}
+  </script>
+</html>
