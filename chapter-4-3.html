@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sepiddd</title>
+  </head>
+  <body>
+    <p>eloquent javascript</p>
+  </body>
+
+  <script type="text/javascript">
+    var list = {};
+    function arrayToList(arr) {
+      for (item of arr) {
+        var temp = {};
+        list.value = item;
+        arr.shift();
+        temp = arr.length > 0 ? arrayToList(arr) : undefined;
+        list.rest = temp;
+      }
+
+      return list;
+    }
+
+    function listToArray() {}
+  </script>
+</html>
